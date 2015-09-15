@@ -1,0 +1,23 @@
+{
+  "name": "jasmine-cordova-runner",
+  "version": "0.1.0",
+  "description": "Runs Jasmine tests inside Cordova on a real phone.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethblack/jasmine-cordova-runner.git"
+  },
+  "keywords": [
+    "cordova",
+    "jasmine"
+  ],
+  "author": "Seth Black <sblack@sethserver.com> (http://sethserver.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethblack/jasmine-cordova-runner/issues"
+  },
+  "homepage": "https://github.com/sethblack/jasmine-cordova-runner#readme"
+}
