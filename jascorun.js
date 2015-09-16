@@ -20,15 +20,7 @@ var jasmineCordovaRunner = {
             throw new Error('cordovaExec expects an array');
         }
 
-        var childProcess = shell.exec('cordova ' + args.join(' '), {async:true, silent:true});
-
-        childProcess.stdout.on('data', function(data) {
-            console.log(data.toString().trim());
-        });
-
-        childProcess.stderr.on('data', function(data) {
-            console.error(data.toString().trim());
-        });
+        var childProcess = shell.exec('cordova ' + args.join(' '), {async:false, silent:false});
     },
     run: function() {
         if (!shell.which('cordova')) {
