@@ -4,7 +4,7 @@
   "description": "Runs Jasmine tests inside Cordova on a real phone.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine-node spec"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,14 @@
   "bugs": {
     "url": "https://github.com/sethblack/jasmine-cordova-runner/issues"
   },
-  "homepage": "https://github.com/sethblack/jasmine-cordova-runner#readme"
+  "homepage": "https://github.com/sethblack/jasmine-cordova-runner#readme",
+  "dependencies": {
+    "fs": "0.0.2",
+    "shelljs": "^0.5.3",
+    "xml2js": "^0.4.12"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "jascorun": "jascorun.js"
+  }
 }
