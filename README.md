@@ -31,6 +31,11 @@ This should create a cordova_test_app directory inside your plugin's directory a
 on your phone. You may want to add cordova_test_app to your local .gitignore to keep your repo
 clean.
 
+# SpecRunners
+
+Because Cordova injects plugins after the DOM has loaded you'll need to wrap your specs with
+a 'deviceready' listener.
+
 # Debugging
 
 Hahaha! It's in Javascript. Good luck!

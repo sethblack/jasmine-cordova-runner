@@ -48,9 +48,10 @@ var jasmineCordovaRunner = {
         this.buildProject(platform);
     },
     createProject: function() {
-        if (!shell.test('-d', APP_DIR)) {
-            shell.cp('-Rf', JCR_HOME + '/cordova_template/', APP_DIR);
+        if (shell.test('-d', APP_DIR)) {
+
         }
+        shell.cp('-Rf', JCR_HOME + '/cordova_template/', APP_DIR);
     },
     buildProject: function(platform) {
         shell.cd(APP_DIR);
@@ -88,6 +89,7 @@ var jasmineCordovaRunner = {
                 shell.mkdir(pluginDir);
 
                 shell.cp(PWD + '/plugin.xml', pluginDir);
+                shell.cp(PWD + '/package.json', pluginDir);
                 shell.cp('-Rf', [PWD + '/scripts', PWD + '/src', PWD + '/www'], pluginDir);
             });
         });
