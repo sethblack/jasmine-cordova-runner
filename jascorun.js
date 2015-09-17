@@ -49,7 +49,7 @@ var jasmineCordovaRunner = {
     },
     createProject: function() {
         if (shell.test('-d', APP_DIR)) {
-
+            return;
         }
         shell.cp('-Rf', JCR_HOME + '/cordova_template/', APP_DIR);
     },

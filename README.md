@@ -9,7 +9,7 @@ for.
 # Install
 
 ```shell
-$ npm install -g jascorun
+$ npm install -g jasmine-cordova-runner
 ```
 
 # Usage
